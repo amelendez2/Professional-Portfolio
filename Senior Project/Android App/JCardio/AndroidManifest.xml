@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.innovativedesign.jcardio"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="21" 
+       />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Splash"
+            android:label="Active Cardio System" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MenuList"
+            android:label="Active Cardio System"
+            android:background="@drawable/splash_background" >
+            <intent-filter>
+                <action android:name="com.innovativedesign.jcardio.MENULIST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.innovativedesign.jcardio.MAINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SetupAccount"
+            android:label="Personalize Your Device" >
+            <intent-filter>
+                <action android:name="com.innovativedesign.jcardio.SETUPACCOUNT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ConnecttoWiFi"
+            android:label="Connect To WiFi Device" 
+            android:icon="@drawable/wifisymbol">
+            <intent-filter>
+                <action android:name="com.innovativedesign.jcardio.CONNECTTOWIFI" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ConnectToBluetooth"
+            android:label="Connect To Bluetooth Device"
+            android:icon="@drawable/bluetooth" >
+            <intent-filter>
+                <action android:name="com.innovativedesign.jcardio.CONNECTTOBLUETOOTH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HeartRateMonitor"
+            android:label="Heart Rate Monitor"
+            android:icon="@drawable/heartbutton" >
+            <intent-filter>
+                <action android:name="com.innovativedesign.jcardio.HEARTRATEMONITOR" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FitnessTracker"
+            android:label="Personal Fitness Review"
+            android:icon="@drawable/splash_background"  >          
+            <intent-filter>
+                <action android:name="com.innovativedesign.jcardio.FITNESSTRACKER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FoodDiary"
+            android:label="Food Diary"
+            android:icon="@drawable/foodicon" >
+            <intent-filter>
+                <action android:name="com.innovativedesign.jcardio.FOODDIARY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PersonalTrainer"
+            android:label="Individual Workout Setup" >
+            <intent-filter>
+                <action android:name="com.innovativedesign.jcardio.PERSONALTRAINER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WiFiDirectActivity"
+            android:label="@string/app_name" android:launchMode="singleTask">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.WIFIDIRECTACTIVITY" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

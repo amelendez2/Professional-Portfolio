@@ -1,0 +1,83 @@
+//-------This program will be used to calculate pulse
+
+//-----INIT------
+int pulse_in = A0;        // ADC record analog register
+int pulse_value;          // Stores value from ADC
+int ledPin9 = 9;          // Select output pin
+int current_state = 0;    // Used to check if on or off
+int counter = 0;          // Starts counting between pulses
+int time1 = 1;            // Check to start a time difference
+int threshold = 61;       // Where you set rising edge from digital 0 to 1
+int BPM = 0;              // Beats per Minute
+
+
+//-------SETUP------
+void setup() {  
+  pinMode (ledPin9, OUTPUT);
+  pinMode (pulse_in, INPUT);
+}
+
+//------Main Loop ----------
+void loop() {
+  pulse_value = analogRead(pulse_in);        // Read the adc and store it
+  
+  if (pulse_value >= threshold)              // Does the ADC value meet our threshold for a pulse
+  {
+   digitalWrite(ledPin9, HIGH );             // Pulse detected turn on led
+   current_state = 1;    
+  }
+  else
+  {
+   digitalWrite(ledPin9, LOW);              // No pulse no led
+  current_state = 0; 
+  }
+  
+  if(current_state == time1)                // If pulse detected start counting until next pulse
+  {
+    delay(250);
+    counter = 250;
+    for(pulse_value = analogRead(pulse_in) ; pulse_value < threshold ; )
+    {
+     counter = counter + 1;      // 250 + counter to calculate time different between beats 
+    }
+    BPM = (60*1000)/ counter;    // Calculate Beats per Minute
+  }
+
+    if(BPM < 70)                  // Yellow
+    {
+      for(int fadeValue = 0 ; fadeValue <= 255; fadeValue +=5) {
+        analogWrite(ledPin9, fadeValue);        
+        delay(30);            
+      }
+      for(int fadeValue = 255 ; fadeValue >= 0; fadeValue -=5) {
+        analogWrite(ledPin9, fadeValue);        
+        delay(30);                            
+      }  
+    }
+    
+    else if((BPM >= 70) | (BPM < 105))        // Green
+    {
+      for(int fadeValue = 0 ; fadeValue <= 255; fadeValue +=5) {
+        analogWrite(ledPin9, fadeValue);        
+        delay(30);            
+      }
+      for(int fadeValue = 255 ; fadeValue >= 0; fadeValue -=5) {
+        analogWrite(ledPin9, fadeValue);        
+        delay(30);                            
+      }  
+    }
+   
+    else if (BPM >= 105)
+    {
+      for(int fadeValue = 0 ; fadeValue <= 255; fadeValue +=5) {
+        analogWrite(ledPin9, fadeValue);        
+        delay(30);            
+      }
+      for(int fadeValue = 255 ; fadeValue >= 0; fadeValue -=5) {
+        analogWrite(ledPin9, fadeValue);        
+        delay(30);                            
+      }  
+    }
+
+
+}

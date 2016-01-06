@@ -1,0 +1,103 @@
+(ExpressProject "firstone"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\heartsensor_10_21_2014.DSN"
+      (Type "Schematic Design")
+      (DisplayName ".\heartsensor_10_21_2014.DSN"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Outputs"
+    (File
+       "c:\users\tony\documents\senior project\pulsesensor1-PSpiceFiles\SCHEMATIC1\SCHEMATIC1.net"
+      (Type "Report")
+      (DisplayName
+         "c:\users\tony\documents\senior project\pulsesensor1-PSpiceFiles\SCHEMATIC1\SCHEMATIC1.net"))
+    (File ".\heartsensor_10_21_2014-PSpiceFiles\SCHEMATIC1\SCHEMATIC1.net"
+      (Type "Report")
+      (DisplayName
+         ".\heartsensor_10_21_2014-PSpiceFiles\SCHEMATIC1\SCHEMATIC1.net")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (ActiveProfile ".\pulsesensor1-pspicefiles\schematic1\project.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         "c:\users\tony\documents\senior project\pulsesensor1-PSpiceFiles\SCHEMATIC1\PULSESENSOR1-SCHEMATIC1-project.sim"
+        (DisplayName "SCHEMATIC1-project")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\heartsensor_10_21_2014-PSpiceFiles\SCHEMATIC1\project.sim"
+        (DisplayName "SCHEMATIC1-project")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (D1N4002
+      (FullPartName "D1N4002.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_16.6_LITE\TOOLS\CAPTURE\LIBRARY\PSPICE\EVAL.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_16.6_LITE\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VSIN
+      (FullPartName "VSIN.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_16.6_LITE\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VSRC
+      (FullPartName "VSRC.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_16.6_LITE\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_16.6_LITE\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName
+         "C:\ORCAD\ORCAD_16.6_LITE\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (uA741
+      (FullPartName "uA741.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_16.6_LITE\TOOLS\CAPTURE\LIBRARY\PSPICE\EVAL.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory
+     "C:\OrCAD\OrCAD_16.6_Lite\tools\capture\library\pspice")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" ".\heartsensor_10_21_2014.DSN")
+      (Path "Design Resources" ".\heartsensor_10_21_2014.DSN" "SCHEMATIC1")
+      (Path "Outputs")
+      (Path "PSpice Resources")
+      (Path "PSpice Resources" "Simulation Profiles"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -30 0 200 0 431"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 100 1744 100 569")
+        (Scroll "84 362")
+        (Zoom "200")
+        (Occurrence "/"))
+      (Path
+         "D:\USERS\TONY\DOCUMENTS\UTEP\EE 4220 SENIOR PROJECT I\ORCAD\HEART_SENSOR\HEARTSENSOR_10_21_2014.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1")))
+  (MPSSessionName "Tony"))

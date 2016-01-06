@@ -1,0 +1,1 @@
+"./play_main_game.obj" "./play_game_2.obj" "./melody.obj" "./main_console_menu.obj" "./lcdLib.obj" "./buffers.obj" "./adcMsp.obj" -l"libc.a" "../lnk_msp430g2553.cmd" 

@@ -1,0 +1,234 @@
+
+**** 10/21/14 02:30:47 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-project"  [ D:\Users\tony\Documents\UTEP\EE 4220 Senior Project I\Orcad\Pulsesensor1\pulsesensor1-pspicefile
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "project.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 100ms 0 10u 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source PULSESENSOR1
+X_U1         N02517 N00443 N01662 N01899 N00767 uA741
+X_U2         N02493 N00464 N01662 N01899 N00816 uA741
+X_U3         N00911 N00977 N01662 N01899 VOUT uA741
+R_R1         N00977 VOUT  1k TC=0,0 
+R_R2         N00443 N00767  2K TC=0,0 
+R_R3         N00464 N00816  2K TC=0,0 
+R_R4         N00464 N00443  500 TC=0,0 
+R_R5         N00767 N00977  1k TC=0,0 
+R_R6         N00816 N00911  1k TC=0,0 
+R_R7         0 N00911  1k TC=0,0 
+V_V1         N01600 N01899 3Vdc
+V_V2         N01662 N01600 3Vdc
+V_V3         N03594 0  
++SIN 0 85m 50 0 0 0
+V_V4         N02527 0  
++SIN 0 2m 50 0 0 180
+R_R8         N03594 N02517  1K TC=0,0 
+R_R9         N02527 N02493  1K TC=0,0 
+D_D1         0 N02517 D1N4002 
+D_D2         N02517 0 D1N4002 
+D_D3         N02493 0 D1N4002 
+D_D4         0 N02493 D1N4002 
+
+**** RESUMING project.cir ****
+.END
+
+**** 10/21/14 02:30:47 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-project"  [ D:\Users\tony\Documents\UTEP\EE 4220 Senior Project I\Orcad\Pulsesensor1\pulsesensor1-pspicefile
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N4002         X_U1.dx         X_U2.dx         X_U3.dx         
+          IS   14.110000E-09  800.000000E-18  800.000000E-18  800.000000E-18 
+           N    1.984                                                        
+         ISR  100.000000E-12                                                 
+         IKF   94.81                                                         
+          BV  100.1                                                          
+         IBV   10                                                            
+          RS     .03389         1               1               1            
+          TT    4.761000E-06                                                 
+         CJO   51.170000E-12                                                 
+          VJ     .3905                                                       
+           M     .2762                                                       
+
+
+**** 10/21/14 02:30:47 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-project"  [ D:\Users\tony\Documents\UTEP\EE 4220 Senior Project I\Orcad\Pulsesensor1\pulsesensor1-pspicefile
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.qx         X_U2.qx         X_U3.qx         
+               NPN             NPN             NPN             
+       LEVEL    1               1               1            
+          IS  800.000000E-18  800.000000E-18  800.000000E-18 
+          BF   93.75           93.75           93.75         
+          NF    1               1               1            
+          BR    1               1               1            
+          NR    1               1               1            
+         ISS    0               0               0            
+          RE    0               0               0            
+          RC    0               0               0            
+         CJE    0               0               0            
+         VJE     .75             .75             .75         
+         CJC    0               0               0            
+         VJC     .75             .75             .75         
+         MJC     .33             .33             .33         
+        XCJC    1               1               1            
+         CJS    0               0               0            
+         VJS     .75             .75             .75         
+          KF    0               0               0            
+          AF    1               1               1            
+          CN    2.42            2.42            2.42         
+           D     .87             .87             .87         
+
+
+**** 10/21/14 02:30:47 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-project"  [ D:\Users\tony\Documents\UTEP\EE 4220 Senior Project I\Orcad\Pulsesensor1\pulsesensor1-pspicefile
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+( VOUT)     .0040  (N00443)     .0021 (N00464)     .0021 (N00767)     .0022     
+
+(N00816)     .0022 (N00911)     .0011 (N00977)     .0031 (N01600)    2.5205     
+
+(N01662)    5.5205 (N01899)    -.4795 (N02493)-76.56E-06 (N02517)-76.56E-06     
+
+(N02527) 244.9E-21 (N03594)    0.0000 (X_U1.6)     .0383 (X_U1.7)     .0022     
+
+(X_U1.8)     .0022 (X_U1.9)    0.0000 (X_U2.6)     .0383 (X_U2.7)     .0023     
+
+(X_U2.8)     .0023 (X_U2.9)    0.0000 (X_U3.6)     .0357 (X_U3.7)     .0041     
+
+(X_U3.8)     .0041 (X_U3.9)    0.0000 (X_U1.10)    -.6062                       
+
+(X_U1.11)    5.4803                   (X_U1.12)    5.4824                       
+
+(X_U1.13)    -.5921                   (X_U1.14)    -.5928                       
+
+(X_U1.53)    4.5205                   (X_U1.54)     .5205                       
+
+(X_U1.90)    -.0012                   (X_U1.91)   40.0000                       
+
+(X_U1.92)  -40.0000                   (X_U1.99)    2.5205                       
+
+(X_U2.10)    -.6062                   (X_U2.11)    5.4803                       
+
+(X_U2.12)    5.4824                   (X_U2.13)    -.5921                       
+
+(X_U2.14)    -.5928                   (X_U2.53)    4.5205                       
+
+(X_U2.54)     .5205                   (X_U2.90) 833.9E-06                       
+
+(X_U2.91)   40.0000                   (X_U2.92)  -40.0000                       
+
+(X_U2.99)    2.5205                   (X_U3.10)    -.6051                       
+
+(X_U3.11)    5.4804                   (X_U3.12)    5.4824                       
+
+(X_U3.13)    -.5910                   (X_U3.14)    -.5917                       
+
+(X_U3.53)    4.5205                   (X_U3.54)     .5205                       
+
+(X_U3.90) 562.0E-06                   (X_U3.91)   40.0000                       
+
+(X_U3.92)  -40.0000                   (X_U3.99)    2.5205                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.035E-03
+    V_V2        -1.035E-03
+    V_V3        -7.656E-08
+    V_V4        -7.656E-08
+    X_U1.vb      3.827E-07
+    X_U1.vc      4.519E-12
+    X_U1.ve     -4.035E-07
+    X_U1.vlim   -1.180E-06
+    X_U1.vlp    -4.000E-11
+    X_U1.vln    -4.000E-11
+    X_U2.vb      3.827E-07
+    X_U2.vc      4.519E-12
+    X_U2.ve     -4.035E-07
+    X_U2.vlim    8.339E-07
+    X_U2.vlp    -4.000E-11
+    X_U2.vln    -4.000E-11
+    X_U3.vb      3.572E-07
+    X_U3.vc      4.517E-12
+    X_U3.ve     -3.765E-07
+    X_U3.vlim    5.620E-07
+    X_U3.vlp    -4.000E-11
+    X_U3.vln    -4.000E-11
+
+    TOTAL POWER DISSIPATION   6.21E-03  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 10/21/14 02:30:47 ****** PSpice Lite (October 2012) ****** ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-project"  [ D:\Users\tony\Documents\UTEP\EE 4220 Senior Project I\Orcad\Pulsesensor1\pulsesensor1-pspicefile
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        1.54
+

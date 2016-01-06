@@ -1,0 +1,108 @@
+{
+	"Level 1-5 Minions":[
+		{
+			"Enemy Name":"Gnoll",
+			"Enemy Level":1,
+            "Enemy Attack Damage":"1d6+5",
+			"Enemy Attack Modifier":5,
+			"Enemy Type":"Minion",
+			"Enemy Health":"3d8+10",
+			"Gold Loot":"50-100 copper",
+			"XP":5
+		},
+		{
+			"Enemy Name":"Gnoll",
+			"Enemy Level":1,
+            "Enemy Attack Damage":"1d6+5",
+			"Enemy Attack Modifier":5,
+			"Enemy Type":"Minion",
+			"Enemy Health":"3d8+10"
+		},
+		{
+			"Enemy Name":"Gnoll",
+			"Enemy Level":1,
+            "Enemy Attack Damage":"1d6+5",
+			"Enemy Attack Modifier":5,
+			"Enemy Type":"Minion",
+			"Enemy Health":"3d8+10"
+		}
+	],
+  "Level 6-10 Minions":[
+		{
+			"Enemy Name":"Gnoll",
+			"Enemy Level":1,
+            "Enemy Attack Damage":"1d6+5",
+			"Enemy Attack Modifier":5,
+			"Enemy Type":"Minion",
+			"Enemy Health":"3d8+10"
+		},
+		{
+			"Enemy Name":"Gnoll",
+			"Enemy Level":1,
+            "Enemy Attack Damage":"1d6+5",
+			"Enemy Attack Modifier":5,
+			"Enemy Type":"Minion",
+			"Enemy Health":"3d8+10"
+		},
+		{
+			"Enemy Name":"Gnoll",
+			"Enemy Level":1,
+            "Enemy Attack Damage":"1d6+5",
+			"Enemy Attack Modifier":5,
+			"Enemy Type":"Minion",
+			"Enemy Health":"3d8+10"
+		}
+	],
+  "Level 11-15 Minions":[
+		{
+			"Enemy Name":"Gnoll",
+			"Enemy Level":1,
+            "Enemy Attack Damage":"1d6+5",
+			"Enemy Attack Modifier":5,
+			"Enemy Type":"Minion",
+			"Enemy Health":"3d8+10"
+		},
+		{
+			"Enemy Name":"Gnoll",
+			"Enemy Level":1,
+            "Enemy Attack Damage":"1d6+5",
+			"Enemy Attack Modifier":5,
+			"Enemy Type":"Minion",
+			"Enemy Health":"3d8+10"
+		},
+		{
+			"Enemy Name":"Gnoll",
+			"Enemy Level":1,
+            "Enemy Attack Damage":"1d6+5",
+			"Enemy Attack Modifier":5,
+			"Enemy Type":"Minion",
+			"Enemy Health":"3d8+10"
+		}
+	],
+  "Level 16-20 Minions":[
+		{
+			"Enemy Name":"Gnoll",
+			"Enemy Level":1,
+            "Enemy Attack Damage":"1d6+5",
+			"Enemy Attack Modifier":5,
+			"Enemy Type":"Minion",
+			"Enemy Health":"3d8+10"
+		},
+		{
+			"Enemy Name":"Gnoll",
+			"Enemy Level":1,
+            "Enemy Attack Damage":"1d6+5",
+			"Enemy Attack Modifier":5,
+			"Enemy Type":"Minion",
+			"Enemy Health":"3d8+10"
+		},
+		{
+			"Enemy Name":"Gnoll",
+			"Enemy Level":1,
+            "Enemy Attack Damage":"1d6+5",
+			"Enemy Attack Modifier":5,
+			"Enemy Type":"Minion",
+			"Enemy Health":"3d8+10"
+		}
+	]
+}
