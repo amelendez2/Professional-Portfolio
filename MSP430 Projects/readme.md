@@ -12,17 +12,17 @@ This repository will show the projects I created using the MSP430
 
 ### Guide for this Project
 
-> ##Analog to Digital Converter and LCD - [main.c](https://github.com/amelendez2/Professional-Portfolio/blob/master/MSP430%20Projects/Analog%20to%20Digital%20Convrter%20and%20LCD/main.c)
+> ##Analog to Digital Converter and LCD - [adc.c](https://github.com/amelendez2/Professional-Portfolio/blob/master/MSP430%20Projects/Analog%20to%20Digital%20Converter%20and%20LCD/main.c)
 >
 > MCU waits for an analog signal to be received through the ADC pin
 > That value is stored to a buffer then used to display the value on the LCD
 
-> ##Interrupts and Pulse Width Modulation - [main.c](https://github.com/amelendez2/Professional-Portfolio/blob/master/MSP430%20Projects/Interrupts%20and%20Pulse%20Width%20Modulation/main.c)
+> ##Interrupts and Pulse Width Modulation - [pwm.c](https://github.com/amelendez2/Professional-Portfolio/blob/master/MSP430%20Projects/Interrupts%20and%20Pulse%20Width%20Modulation/main.c)
 >
 > This project uses interrupts to wake the processor out of low power mode
 > It also uses PWM to change LEDs based off duty cycle
 
-> ##Serial Communication
+> ##Serial Communication - [Rx.c](https://github.com/amelendez2/Professional-Portfolio/blob/master/MSP430%20Projects/Serial%20Communication/Receive/uart_main_RX.c) [Tx.c](https://github.com/amelendez2/Professional-Portfolio/blob/master/MSP430%20Projects/Serial%20Communication/Transmit/uart_main_TX.c)
 >
 > This project has 2 folders, one for Tx (transmit) and the other for Rx(receive)
 > In this project we pass values form one MSP430 to another using UART(universal asynchronous receiver/transmitter)
