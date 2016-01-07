@@ -4,10 +4,10 @@ Senior Capstone Project
 Active Cardiovascular System (Smart Jump rope)
 -----------------
 
-# Programming Languages: Java, C++, Python
-# Applications: MATLAB, OrCAD, Android Studio, Arduino, Eclipse
+### Programming Languages: Java, C++, Python
+### Applications: MATLAB, OrCAD, Android Studio, Arduino, Eclipse
 
-### Quick Introduction
+## Quick Introduction
 	This Project was my capstone group project that I developed, for which I received
 	an A, during my senior year. The project is a fitness device (jump rope) that will
 	take the user's heart rate via am Electrocardiogram(ECG) and transmit that data to 
@@ -18,7 +18,7 @@ Active Cardiovascular System (Smart Jump rope)
 	as the on board Bluetooth Low Energy antenna was an added bonus to the other specifications 
 	that we would be using.
 	
-### Shortcomings
+## Shortcomings
 	With all projects there were setbacks during the development of this device. Our initial design
 	unfortunately would not be feasible, as we wanted to create an accurate device. However, we shifted
 	our focus and design and we were able to create a working device that was accurate to within
