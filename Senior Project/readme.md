@@ -34,9 +34,9 @@ Active Cardiovascular System (Smart Jump rope)
 
 > ## Capturing the Heart Rate for the First Time (Great Times!)
 >
-> BPM Video	   	- [Bluetooth_BPM.mp4](https://github.com/amelendez2/Professional-Portfolio/blob/master/PythonGame_D20_early_development/Heroes.py)
+> BPM Video	   	- [Bluetooth_BPM.mp4](https://github.com/amelendez2/Professional-Portfolio/blob/master/Senior%20Project/Bluetooth_BPM.mp4)
 
 > ## The Final Product! (Before it Shorted Out)
 >
-> Final Video	- [FinalProduct.mp4](https://github.com/amelendez2/Professional-Portfolio/blob/master/PythonGame_D20_early_development/ArmorDB.py)
+> Final Video	- [FinalProduct.mp4](https://github.com/amelendez2/Professional-Portfolio/blob/master/Senior%20Project/FinalProduct.mp4)
 
