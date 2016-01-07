@@ -28,7 +28,7 @@ This repository will show the projects I created using the MSP430
 > In this project we pass values form one MSP430 to another using UART(universal asynchronous receiver/transmitter)
 > We pass a single character and verify that it is received on the other end by turning on a LED
 
-> ##Final Project
+> ##Final Project - [MainGame.c](https://github.com/amelendez2/Professional-Portfolio/blob/master/MSP430%20Projects/Final_Project/play_game_2.c)
 >
 > This project was very challenging as it entailed using all the knowledge from our Micro Architecture course
 > Also, it required innovative thinking as the project would require 2 persons to use the game simultaneously on one MSP430
