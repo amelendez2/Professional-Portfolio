@@ -1,3 +1,0 @@
-ColorLED	KEYWORD1
-red	KEYWORD2
-green	KEYWORD3
