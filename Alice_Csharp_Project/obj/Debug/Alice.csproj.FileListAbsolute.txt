@@ -1,0 +1,6 @@
+c:\users\tony\documents\visual studio 2013\Projects\Alice\bin\Debug\Alice.exe.config
+c:\users\tony\documents\visual studio 2013\Projects\Alice\bin\Debug\Alice.exe
+c:\users\tony\documents\visual studio 2013\Projects\Alice\bin\Debug\Alice.pdb
+c:\users\tony\documents\visual studio 2013\Projects\Alice\obj\Debug\Alice.csprojResolveAssemblyReference.cache
+c:\users\tony\documents\visual studio 2013\Projects\Alice\obj\Debug\Alice.exe
+c:\users\tony\documents\visual studio 2013\Projects\Alice\obj\Debug\Alice.pdb
